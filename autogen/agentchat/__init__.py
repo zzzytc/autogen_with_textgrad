@@ -7,6 +7,7 @@ from .orchestrator import Orchestrator
 from .user_proxy_agent import UserProxyAgent
 from .utils import gather_usage_summary
 from .WebSurferAgent import WebSurferAgent
+from .SimpleTextBrowser import SimpleTextBrowser
 
 __all__ = (
     "Agent",
@@ -20,5 +21,6 @@ __all__ = (
     "gather_usage_summary",
     "ChatResult",
     "Orchestrator",
-    "WebSurferAgent"
+    "WebSurferAgent",
+    "SimpleTextBrowser"
 )
