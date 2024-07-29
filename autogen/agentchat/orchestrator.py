@@ -5,8 +5,11 @@ import copy
 import sys
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union, Callable, Literal, Tuple
-from autogen import Agent, ConversableAgent, GroupChatManager, GroupChat, OpenAIWrapper
 
+from agent import Agent
+from conversable_agent import ConversableAgent
+from groupchat import GroupChat, GroupChatManager
+from ..oai.client import OpenAIWrapper
 
 class Orchestrator(ConversableAgent):
     def __init__(
